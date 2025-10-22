@@ -16,7 +16,7 @@ app.use(express.json());
 app.use("/api/payments", paymentRoutes);
 
 // MongoDB connection
-const mongoURI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/paymentDB";
+const mongoURI = process.env.MONGO_URI || "mongodb+srv://yash281120:hXCxgoAyTfukTA7o@cluster0.u6wxbz2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(mongoURI)
   .then(() => console.log("MongoDB Connected ✅"))
